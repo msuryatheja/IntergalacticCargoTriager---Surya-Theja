@@ -1,28 +1,37 @@
 # Intergalactic Cargo Triager
 
-## Task 1 - Parser
+Task 1 - Parser
 
-This project is part of the Bread Winner AI evaluation.
+This project is part of the Bread Winner AI evaluation project.
 
 ### Objective
 
-Parse the provided cargo manifest file and convert it into a clean JSON format while following the specified business rules.
+Parse the provided cargo manifest file and convert it into a clean JSON array while applying the required business rules.
 
 ### Business Rules Implemented
 
-* Records containing "Sector-7" in the destination have their weight multiplied by 1.45.
-* The resulting weight is rounded to the nearest whole number.
-* Records with a final weight that is a prime number are excluded from the output.
+1. If the destination contains "Sector-7", the cargo weight is multiplied by 1.45.
+2. The resulting weight is rounded to the nearest whole number.
+3. Records with a final weight that is a prime number are excluded from the output.
 
 ### Files
 
-* manifest.txt - Input cargo manifest data
+* manifest.txt - Input cargo manifest
 * parser.py - Parser implementation
-* Task 1 - Surya Theja - Parser.json - Generated JSON output
+* Task 1 - SuryaTheja - Parser.json - Generated JSON output
 * README.md - Project documentation
 
-### Current Status
+### Output Summary
 
-* Parser logic completed
-* Business rules implemented
+* Total records processed: 12
+* Records removed due to prime weights: 2
+* Valid records generated: 10
+
+### Status
+
+Parser completed
+Business rules implemented
+JSON output generated successfully
+Task 1 completed
+
 
